@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.ul-cont {
+  display: inline-flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ul-cont li {
+  list-style: none;
+  cursor: pointer;
+  
+}
