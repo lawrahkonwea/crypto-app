@@ -26,7 +26,7 @@
 
 
 
-# 📖 <a name="Crpyto-Cash">is a web application and a platform that utilizes the Coingecko API to fetch data on different cryptocurrencies and displays the information for each coin in a comprehensive manner.</a>
+# 📖 Crpyto-Cash is a web application and a platform that utilizes the Coingecko API to fetch data on different cryptocurrencies and displays the information for each coin in a comprehensive manner.</a>
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -173,9 +173,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project please share and contribute.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
