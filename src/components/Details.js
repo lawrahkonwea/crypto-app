@@ -1,13 +1,14 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
-
+/* eslint-disable-next-line */
 const Details = () => {
   const location = useLocation();
   if (location.state) {
     const {
-      name, image, description, country, year_established,
-      // eslint-disable-next-line
+      name, image, description, country,
+      // eslint-disable-next-line 
+      year_established,
       trust_score_rank, trade_volume_24h_btc,
     } = location.state;
 
@@ -48,6 +49,7 @@ const Details = () => {
               </p>
             </tr>
             <tr>
+            {/* eslint-disable-next-line */}
               <p>Ranked at</p>
               <span>
                 #
@@ -55,10 +57,12 @@ const Details = () => {
               </span>
             </tr>
             <tr>
+              {/* eslint-disable-next-line */}
               <p>Trade volume 24h btc:</p>
               <span>{trade_volume_24h_btc}</span>
             </tr>
             <tr>
+              {/* eslint-disable-next-line */}
               <p>Year Established:</p>
               <p>
 

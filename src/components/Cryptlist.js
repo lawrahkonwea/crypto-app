@@ -4,7 +4,9 @@ import { BsArrowRightCircle } from 'react-icons/bs';
 
 const Cryptlist = ({ coin, arrowClick }) => {
   const {
-    name, image, trust_score_rank, url, id,
+    name, image, 
+    /* eslint-disable-next-line */
+    trust_score_rank, url, id,
   } = coin;
 
   return (
