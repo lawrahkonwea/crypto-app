@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gill-sans');
+
+body {
+  background-image: url(./images/crypto-key.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   padding: 0 60px;
+}
+
+.header h1 {
+  color: white;
+}
+
+.input-header {
+  color: white;
 }
 
 .ul-cont {
@@ -13,5 +30,129 @@
 .ul-cont li {
   list-style: none;
   cursor: pointer;
-  
+  color: white;
+}
+
+.input1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.input {
+  padding: 10px 20px;
+  margin: 0 20px;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  font-size: 25px;
+}
+
+.rotate-img {
+  display: grid;
+  place-items: center;
+}
+
+.grid {
+  display: grid;
+  padding: 0 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.animate {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  position: relative;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+.each-coin {
+  background-color: rgb(0, 97, 86);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  cursor: pointer;
+  margin: 4px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.each-coin:hover {
+  opacity: 0.6;
+}
+
+.pointer {
+  background: none;
+  color: black;
+  border: none;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.back-arrow {
+  border: none;
+  color: black;
+  width: 30px;
+  height: 20px;
+
+  /* padding-left: 30px; */
+  cursor: pointer;
+}
+
+.details {
+  color: white;
+}
+
+.header-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-detail {
+  width: 10%;
+  margin-bottom: 40px;
+}
+
+.url {
+  color: silver;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.url:hover {
+  transition: 0.6s ease-in;
+  color: red;
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  font-size: 1em;
+  padding: 0 10px 10px 10px;
+  background-color: rgb(0, 97, 86);
+}
+
+caption {
+  padding: 20px;
+  background-color: rgb(0, 97, 86);
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+tr:nth-child(odd),
+tr:nth-child(odd) > * {
+  background-color: rgb(101, 182, 171);
+  border-radius: 5px;
 }
