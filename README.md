@@ -66,9 +66,12 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://crypto-cash-website.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Video Description <a name=""></a>
+- [Video](https://crypto-cash-website.netlify.app/)
 
 
 
