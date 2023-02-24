@@ -6,10 +6,8 @@ const Details = () => {
   const location = useLocation();
   if (location.state) {
     const {
-      name, image, description, country,
-      // eslint-disable-next-line 
-      year_established,
-      trust_score_rank, trade_volume_24h_btc,
+      // eslint-disable-next-line
+      name, image, description, country, year_established, trust_score_rank, trade_volume_24h_btc,
     } = location.state;
 
     return (
@@ -39,41 +37,42 @@ const Details = () => {
             <tr>
               <p>
                 {
-               description ? (
-                 <p>
-                   Description:
-                   <span>{description}</span>
-                 </p>
-               ) : 'No Description'
-            }
+                  description ? (
+                    <p>
+                      Description:
+                      <span>{description}</span>
+                    </p>
+                  ) : 'No Description'
+                }
               </p>
             </tr>
+
             <tr>
-            {/* eslint-disable-next-line */}
               <p>Ranked at</p>
               <span>
                 #
+                {/* eslint-disable-next-line */}
                 {trust_score_rank}
               </span>
             </tr>
             <tr>
-              {/* eslint-disable-next-line */}
               <p>Trade volume 24h btc:</p>
+              {/* eslint-disable-next-line */}
               <span>{trade_volume_24h_btc}</span>
             </tr>
             <tr>
-              {/* eslint-disable-next-line */}
               <p>Year Established:</p>
               <p>
 
                 {
-              year_established ? (
-                <p>
-
-                  <span>{year_established}</span>
-                </p>
-              ) : ''
-            }
+                  // eslint-disable-next-line
+                  year_established ? (
+                    <p>
+                      {/* eslint-disable-next-line */}
+                      <span>{year_established}</span>
+                    </p>
+                  ) : ''
+                }
               </p>
             </tr>
           </tbody>
