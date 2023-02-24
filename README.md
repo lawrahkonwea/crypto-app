@@ -71,7 +71,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Video Description <a name=""></a>
-- [Video](https://drive.google.com/drive/u/0/folders/1gaHfj3nH6IXzymBL_otW7kzoLU-pm0yZ)
+- [Video](https://drive.google.com/drive/folders/1gaHfj3nH6IXzymBL_otW7kzoLU-pm0yZ?usp=sharing)
 
 
 
