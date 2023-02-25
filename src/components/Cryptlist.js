@@ -10,25 +10,27 @@ const Cryptlist = ({ coin, arrowClick }) => {
   } = coin;
 
   return (
-    <div className="each-coin">
-      <div>
-        <img src={image} alt={name} />
+    <section className="each-coin">
+      <div className="coins-each">
+        <div>
+          <img src={image} alt={name} />
+        </div>
+        <div>
+          <p className="center">
+            Ranked at #
+            {/* eslint-disable-next-line */}
+            {trust_score_rank}
+          </p>
+          <h1 className="center break">{name}</h1>
+          <a className="url" href={url}>{name}</a>
+        </div>
+        <div>
+          <button type="button" className="pointer" onClick={() => (arrowClick(id))} id="icon" title="icon">
+            <BsArrowRightCircle />
+          </button>
+        </div>
       </div>
-      <div>
-        <p className="center">
-          Ranked at #
-          {/* eslint-disable-next-line */}
-          {trust_score_rank}
-        </p>
-        <h1 className="center break">{name}</h1>
-        <a className="url" href={url}>{name}</a>
-      </div>
-      <div>
-        <button type="button" className="pointer" onClick={() => (arrowClick(id))} id="icon" title="icon">
-          <BsArrowRightCircle />
-        </button>
-      </div>
-    </div>
+    </section>
   );
 };
 
