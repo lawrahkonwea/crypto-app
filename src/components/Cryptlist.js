@@ -16,11 +16,11 @@ const Cryptlist = ({ coin, arrowClick }) => {
           <img src={image} alt={name} />
         </div>
         <div>
-          <p className="center">
+          {/* <p className="center">
             Ranked at #
-            {/* eslint-disable-next-line */}
+            eslint-disable-next-line
             {trust_score_rank}
-          </p>
+          </p> */}
           <h1 className="center break">{name}</h1>
           <a className="url" href={url}>{name}</a>
         </div>
