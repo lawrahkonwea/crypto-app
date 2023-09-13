@@ -36,7 +36,6 @@ nav {
   align-items: center;
   width: 93%;
   margin: auto;
-
 }
 
 nav h2 {
@@ -112,25 +111,24 @@ main .search-bar:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-   height: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .each-coin {
     /* grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr; */ 
+    grid-auto-rows: 1fr; */
+
     /* width: 50%; */
     width: 190px;
     margin-bottom: 10px;
   }
 }
 
-@media screen and (max-width: 1140px){
-.grid .each-coin {
-  width: 200px;
-}
-
-
+@media screen and (max-width: 1140px) {
+  .grid .each-coin {
+    width: 200px;
+  }
 }
 
 .animate {
@@ -166,7 +164,7 @@ main .search-bar:focus {
   color: black;
   border: none;
   font-size: larger;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .back-arrow {
