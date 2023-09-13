@@ -1,16 +1,29 @@
 import React from 'react';
-import { FaMicrophone } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaMicrophone, FaHome } from 'react-icons/fa';
 import { BsGear } from 'react-icons/bs';
 
 const Navigation = () => (
-  <div className="header">
-    <h1>Cyber&nbsp;Cash</h1>
-    <ul className="ul-cont">
-      <li><FaMicrophone /></li>
-      <li><BsGear /></li>
-    </ul>
+  <header>
+  <div className="header-content">
+    <nav>
+      <h1 className="home-icon">
+        <Link to="/">
+          <FaHome className="home-link-icon" />
+        </Link>
+      </h1>
+      <h1>Crypto List</h1>
+      <ul>
+        <li>
+          <FaMicrophone className="nav-icons" />
+        </li>
+        <li>
+          <BsGear className="nav-icons" />
+        </li>
+      </ul>
+    </nav>
   </div>
-
+  </header>
 );
 
 export default Navigation;
