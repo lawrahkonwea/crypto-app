@@ -1,25 +1,24 @@
 import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
-import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
+import { useLocation } from 'react-router-dom';
+import Header from './DetailsHeader';
 /* eslint-disable-next-line */
 const Details = () => {
   const location = useLocation();
   if (location.state) {
     const {
       // eslint-disable-next-line
-      name, image, description, country, year_established, trust_score_rank, trade_volume_24h_btc,
+      name, image, url, description, country, year_established, trust_score_rank, trade_volume_24h_btc,
     } = location.state;
 
     return (
+      <>
+      <Header />
       <div className="details">
-        <button type="button">
-          <Link className="back-arrow" to="/"><BsFillArrowLeftCircleFill /></Link>
-        </button>
         <div className="header-detail">
           <img className="img-detail" src={image} alt={name} />
         </div>
         <table>
-          <caption>{name}</caption>
+          <caption><a className="url" href={url}>{name}</a></caption>
           <tbody>
             <tr>
               <p>country origin:</p>
@@ -78,7 +77,7 @@ const Details = () => {
           </tbody>
         </table>
       </div>
-
+      </>
     );
   }
 };
