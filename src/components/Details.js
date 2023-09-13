@@ -1,30 +1,29 @@
 import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
-import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
+import { useLocation } from 'react-router-dom';
+import Header from './DetailsHeader';
 /* eslint-disable-next-line */
 const Details = () => {
   const location = useLocation();
   if (location.state) {
     const {
       // eslint-disable-next-line
-      name, image, description, country, year_established, trust_score_rank, trade_volume_24h_btc,
+      name, image, url, description, country, year_established, trust_score_rank, trade_volume_24h_btc,
     } = location.state;
 
     return (
-      <div className="details">
-        <button type="button">
-          <Link className="back-arrow" to="/"><BsFillArrowLeftCircleFill /></Link>
-        </button>
-        <div className="header-detail">
-          <img className="img-detail" src={image} alt={name} />
-        </div>
-        <table>
-          <caption>{name}</caption>
-          <tbody>
-            <tr>
-              <p>country origin:</p>
-              <p className="desc-color">
-                {
+      <>
+        <Header />
+        <div className="details">
+          <div className="header-detail">
+            <img className="img-detail" src={image} alt={name} />
+          </div>
+          <table>
+            <caption><a className="url" href={url}>{name}</a></caption>
+            <tbody>
+              <tr>
+                <p>country origin:</p>
+                <p className="desc-color">
+                  {
                   country ? (
                     <p className="desc-color">
 
@@ -32,11 +31,11 @@ const Details = () => {
                     </p>
                   ) : ''
                 }
-              </p>
-            </tr>
-            <tr>
-              <p>
-                {
+                </p>
+              </tr>
+              <tr>
+                <p>
+                  {
                   description ? (
                     <p>
                       Description:
@@ -44,27 +43,27 @@ const Details = () => {
                     </p>
                   ) : 'No Description'
                 }
-              </p>
-            </tr>
+                </p>
+              </tr>
 
-            <tr>
-              <p>Ranked at</p>
-              <span>
-                #
-                {/* eslint-disable-next-line */}
+              <tr>
+                <p>Ranked at</p>
+                <span>
+                  #
+                  {/* eslint-disable-next-line */}
                 {trust_score_rank}
-              </span>
-            </tr>
-            <tr>
-              <p>Trade volume 24h btc:</p>
-              {/* eslint-disable-next-line */}
+                </span>
+              </tr>
+              <tr>
+                <p>Trade volume 24h btc:</p>
+                {/* eslint-disable-next-line */}
               <span>{trade_volume_24h_btc}</span>
-            </tr>
-            <tr>
-              <p>Year Established:</p>
-              <p>
+              </tr>
+              <tr>
+                <p>Year Established:</p>
+                <p>
 
-                {
+                  {
                   // eslint-disable-next-line
                   year_established ? (
                     <p>
@@ -73,12 +72,12 @@ const Details = () => {
                     </p>
                   ) : ''
                 }
-              </p>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
+                </p>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </>
     );
   }
 };

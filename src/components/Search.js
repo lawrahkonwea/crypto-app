@@ -1,18 +1,22 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import Navigation from './Navbar';
 
-const Search = ({ onSearch }) => {
-  const header = 'Search Cyber Cash';
-  return (
-    <>
-      <div className="input1">
-        <h4 className="input-header">{header}</h4>
-        <input className="input" type="search" onChange={onSearch} placeholder="$" />
-      </div>
-    </>
+const Search = ({ onSearch }) => (
+  <>
+    <Navigation />
+    <main>
+      <input
+        className="search-bar"
+        type="text"
+        name="searchItem"
+        placeholder="search for a coin"
+        onChange={onSearch}
+      />
+    </main>
+  </>
 
-  );
-};
+);
 
 Search.propTypes = {
   onSearch: PropTypes.func,

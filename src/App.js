@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { fetchCrypto } from './redux/crypto/crypto';
 import Details from './components/Details';
 import Home from './components/Home';
-import Navigation from './components/Navbar';
+// import Navigation from './components/Navbar';
 
 function App() {
   const dispatch = useDispatch();
@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/details" element={<Details />} />
