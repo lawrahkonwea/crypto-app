@@ -106,12 +106,15 @@ main .search-bar:focus {
 
 .grid {
   /* display: grid;
-  padding: 0 40px;
+ 
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   height: 100%;
+  padding: 0 50px;
+ 
+  /* max-width: fit-content; */
 }
 
 @media screen and (max-width: 768px) {
@@ -138,8 +141,9 @@ main .search-bar:focus {
   border-radius: 50%;
   margin: auto;
   margin-bottom: 10px;
-  width: 80px;
+  width: 100px;
   height: 80px;
+  padding: 0;
   animation: spin 2s linear infinite;
 }
 
@@ -152,7 +156,7 @@ main .search-bar:focus {
   transition: 0.5s;
   width: 200px;
   height: 250px;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 .each-coin:hover {
