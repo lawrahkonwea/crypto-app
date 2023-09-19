@@ -105,24 +105,15 @@ main .search-bar:focus {
 }
 
 .grid {
-  /* display: grid;
- 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   height: 100%;
   padding: 0 50px;
- 
-  /* max-width: fit-content; */
 }
 
 @media screen and (max-width: 768px) {
   .each-coin {
-    /* grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr; */
-
-    /* width: 50%; */
     width: 190px;
     margin-bottom: 10px;
   }
@@ -156,7 +147,6 @@ main .search-bar:focus {
   transition: 0.5s;
   width: 200px;
   height: 250px;
-  /* flex-direction: row; */
 }
 
 .each-coin:hover {
